@@ -1,0 +1,6 @@
+Data do Cálculo: 2024-11-27
+CPF: 11111111111
+Nome: teste
+IMC: 24,69
+Resultado: Peso normal
+

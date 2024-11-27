@@ -1,0 +1,6 @@
+Data do Cálculo: 2024-11-27
+CPF: 33333333333
+Nome: José
+IMC: 24,49
+Resultado: Peso normal
+

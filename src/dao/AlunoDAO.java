@@ -72,26 +72,4 @@ public class AlunoDAO {
         }
         return null;  // Caso não encontre aluno
     }
-
-    // Método para listar todos os alunos
-    public List<Aluno> listarAlunos() throws SQLException {
-        List<Aluno> alunos = new ArrayList<>();
-        String sql = "SELECT * FROM alunos";
-
-        try (PreparedStatement stmt = connection.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
-
-            while (rs.next()) {
-                Aluno aluno = new Aluno(
-                        rs.getString("cpf"),
-                        rs.getString("nome"),
-                        rs.getDate("data_nascimento").toLocalDate(),
-                        rs.getDouble("peso"),
-                        rs.getDouble("altura")
-                );
-                alunos.add(aluno);
-            }
-        }
-        return alunos;
-    }
 }

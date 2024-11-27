@@ -1,0 +1,6 @@
+Data do Cálculo: 2024-11-27
+CPF: 22222222222
+Nome: Afonso
+IMC: 23,66
+Resultado: Peso normal
+

@@ -5,13 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionFactory {
-    private static final String URL = "jdbc:mysql://localhost:3306/av2";
-    private static final String USER = "root";
-    private static final String PASSWORD = "root";
-
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection(URL, USER, PASSWORD);
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/av2", "root", "fatec");
         } catch (SQLException e) {
             throw new RuntimeException("Erro ao conectar com o banco de dados", e);
         }
